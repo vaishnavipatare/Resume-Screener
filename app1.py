@@ -167,8 +167,8 @@ def extract_name_from_resume(text):
 
 # Load the models outside the main function to avoid reloading on every interaction
 try:
-    rf_classifier_categorization = pickle.load(open('Resume_Model/rf_classifier_categorization.pkl', 'rb'))
-    tfidf_vectorizer_categorization = pickle.load(open('Resume_Model/tfidf_vectorizer_categorization.pkl', 'rb'))
+    rf_classifier_categorization = pickle.load(open('rf_classifier_categorization.pkl', 'rb'))
+    tfidf_vectorizer_categorization = pickle.load(open('tfidf_vectorizer_categorization.pkl', 'rb'))
     rf_classifier_job_recommendation = pickle.load(open('rf_classifier_job_recommendation.pkl', 'rb'))
     tfidf_vectorizer_job_recommendation = pickle.load(open('tfidf_vectorizer_job_recommendation.pkl', 'rb'))
 except FileNotFoundError:
