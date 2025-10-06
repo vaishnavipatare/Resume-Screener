@@ -1,0 +1,6 @@
+*.csv
+*.ipynb_checkpoints/
+__pycache__/
+*.pyc
+*new
+*jobs_dataset_with_features.csv
